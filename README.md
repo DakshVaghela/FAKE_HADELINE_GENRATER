@@ -4,12 +4,6 @@ A fun and random Breaking News Generator built with **Flask**, **HTML**, **CSS**
 
 ---
 
-## 🖼️ Demo
-
-![screenshot](https://via.placeholder.com/800x400.png?text=Breaking+News+Generator+Demo)
-
----
-
 ## 🚀 Features
 
 - Randomly generated breaking news headlines

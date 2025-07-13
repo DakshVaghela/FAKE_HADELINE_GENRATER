@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Breaking News Generator</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>🔥 Breaking News Generator 🔥</h1>
+    <div id="news-box">Click the button to generate news!</div>
+    <button onclick="generateNews()">Generate News</button>
+  </div>
+
+  <script>
+    async function generateNews() {
+      const res = await fetch('/generate', {
+        method: 'POST'
+      });
+      const data = await res.json();
+      document.getElementById("news-box").innerText = data.headline;
+    }
+  </script>
+</body>
+</html>
